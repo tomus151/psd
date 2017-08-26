@@ -369,3 +369,21 @@
           }
      }
 }
+//row8
+.container .row8{
+     display: flex;
+     justify-content: center;
+     .row8Col-8{
+          .row8Col-8Col-12Two{
+               .navBar2Span{
+                    @include headerSpan (white);
+               }
+          }
+          .row8Col-8Col-12enTwo{
+               .row8Col-8Col-12enOneCol-6One{
+                    display: flex;
+                    flex-direction: column;
+               }
+          }
+     }
+}

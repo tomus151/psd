@@ -299,3 +299,16 @@
       padding-top: 30px; }
       .container .row7 .row7Col-8 .row7Col-8Col-12Two p {
         padding-top: 20px; }
+
+.container .row8 {
+  display: flex;
+  justify-content: center; }
+  .container .row8 .row8Col-8 .row8Col-8Col-12Two .navBar2Span {
+    padding-top: 40px;
+    color: white; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12Two .navBar2Span .navBar2SpanUnderline {
+      border-bottom: 1px solid white;
+      padding-bottom: 3px; }
+  .container .row8 .row8Col-8 .row8Col-8Col-12enTwo .row8Col-8Col-12enOneCol-6One {
+    display: flex;
+    flex-direction: column; }
