@@ -309,6 +309,7 @@
      display: flex;
      justify-content: center;
      background-image: url("../images/bgPhoto2.png");
+     background-attachment: fixed;
      background-size: cover;
      background-position: center;
      height:  315px;
@@ -352,18 +353,34 @@
      background-color: white;
      display: flex;
      justify-content: center;
+     height:225px;
 
      .row7Col-8{
           margin-top: 20px;
-          margin-left:-20px;
+          margin-left:-50px;
           .row7Col-8Col-12One{
+               display: flex;
+               justify-content: space-between;
                .navBar2Span{
+                    margin-top: -11px;
                     @include headerSpan (black);
+                    font-size: 20px;
+               }
+               img{
+                    width: 15px;
+                    height: 15px;
+                    margin-top: 29px;
                }
           }
           .row7Col-8Col-12Two{
                padding-top: 30px;
+               q{
+                    font-weight: 100;
+                    font-size: 18px;
+               }
                p{
+                    font-size: 10px;
+                    color:#49C4F7;
                     padding-top: 20px;
                }
           }
@@ -373,16 +390,104 @@
 .container .row8{
      display: flex;
      justify-content: center;
-     .row8Col-8{
-          .row8Col-8Col-12Two{
-               .navBar2Span{
-                    @include headerSpan (white);
+     background: url("../images/bgPhoto3.png");
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     height: 510px;
+          .row8Col-8{
+               padding-top: 48px;
+               .row8Col-8Col-12One{
+                    margin-bottom: 21px;
+                    .navBar2Span{
+                         margin-left: -4px;
+                         font-size: 18px;
+                         @include headerSpan (white);
+                    }
+               }
+               .row8Col-8Col-12Two{
+                    .row8Col-8Col-12enOneCol-6One{
+                         display: flex;
+                         flex-direction: column;
+                    }
+                    .row8Col-8Col-12enTwoCol-6One{
+                         margin-left: -5px;
+                         color: white;
+                         .label{
+
+                              margin-left: -20px;
+                              font-size: 10px;
+                         }
+                         input{
+                              width: 294px;
+                              height: 38px;
+                              margin-left: -20px;
+                              background-color: transparent;
+                              border:1px solid white;
+                         }
+                         .inputFir{
+                              margin-bottom: 20px;
+                         }
+                    }
+                    .row8Col-8Col-12TwoCol-6Two{
+                         color: white;
+                         font-size: 10px;
+                    }
+               }
+               .row8Col-8Col-12Three{
+                    margin-top: 19px;
+                    margin-left: -5px;
+                    .label{
+                         color: white;
+                         font-size: 10px;
+                    }
+                    textarea{
+                         width: 733px;
+                         height: 137px;
+                         resize: none;
+                         border: 1px solid white;
+                         background-color: transparent;
+                         margin-bottom: 20px;
+                    }
+                    button{
+                         width: 232px;
+                         height: 37px;
+                         background-color: #49C4F7;
+                         font-size: 10px;
+                         color: white;
+                         border: none;
+                    }
                }
           }
-          .row8Col-8Col-12enTwo{
-               .row8Col-8Col-12enOneCol-6One{
-                    display: flex;
-                    flex-direction: column;
+}
+//row9
+.container .row9{
+     background-color: #353D47;
+     height: 107px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .row9Col-8{
+          footer{
+
+               .navBarUl{
+                    margin-left: 6px;
+                    .navBarUlLi{
+                         list-style: none;
+                         display: inline-block;
+                         border-right: 1px solid #515f67;
+
+                         padding-right:  20px;
+                         .navBarUlLiA{
+                              text-decoration: none;
+                              color: #515f67;
+                              color: white;
+                              font-size: 8px;
+                         }
+                    }
+                    .navBarUlLiLast{
+                         border: none;
+                    }
                }
           }
      }

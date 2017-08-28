@@ -251,6 +251,7 @@
   display: flex;
   justify-content: center;
   background-image: url("../images/bgPhoto2.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 315px; }
@@ -285,30 +286,114 @@
 .container .row7 {
   background-color: white;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 225px; }
   .container .row7 .row7Col-8 {
     margin-top: 20px;
-    margin-left: -20px; }
-    .container .row7 .row7Col-8 .row7Col-8Col-12One .navBar2Span {
-      padding-top: 40px;
-      color: black; }
-      .container .row7 .row7Col-8 .row7Col-8Col-12One .navBar2Span .navBar2SpanUnderline {
-        border-bottom: 1px solid black;
-        padding-bottom: 3px; }
+    margin-left: -50px; }
+    .container .row7 .row7Col-8 .row7Col-8Col-12One {
+      display: flex;
+      justify-content: space-between; }
+      .container .row7 .row7Col-8 .row7Col-8Col-12One .navBar2Span {
+        margin-top: -11px;
+        padding-top: 40px;
+        color: black;
+        font-size: 20px; }
+        .container .row7 .row7Col-8 .row7Col-8Col-12One .navBar2Span .navBar2SpanUnderline {
+          border-bottom: 1px solid black;
+          padding-bottom: 3px; }
+      .container .row7 .row7Col-8 .row7Col-8Col-12One img {
+        width: 15px;
+        height: 15px;
+        margin-top: 29px; }
     .container .row7 .row7Col-8 .row7Col-8Col-12Two {
       padding-top: 30px; }
+      .container .row7 .row7Col-8 .row7Col-8Col-12Two q {
+        font-weight: 100;
+        font-size: 18px; }
       .container .row7 .row7Col-8 .row7Col-8Col-12Two p {
+        font-size: 10px;
+        color: #49C4F7;
         padding-top: 20px; }
 
 .container .row8 {
   display: flex;
-  justify-content: center; }
-  .container .row8 .row8Col-8 .row8Col-8Col-12Two .navBar2Span {
-    padding-top: 40px;
-    color: white; }
-    .container .row8 .row8Col-8 .row8Col-8Col-12Two .navBar2Span .navBar2SpanUnderline {
-      border-bottom: 1px solid white;
-      padding-bottom: 3px; }
-  .container .row8 .row8Col-8 .row8Col-8Col-12enTwo .row8Col-8Col-12enOneCol-6One {
-    display: flex;
-    flex-direction: column; }
+  justify-content: center;
+  background: url("../images/bgPhoto3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 510px; }
+  .container .row8 .row8Col-8 {
+    padding-top: 48px; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12One {
+      margin-bottom: 21px; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12One .navBar2Span {
+        margin-left: -4px;
+        font-size: 18px;
+        padding-top: 40px;
+        color: white; }
+        .container .row8 .row8Col-8 .row8Col-8Col-12One .navBar2Span .navBar2SpanUnderline {
+          border-bottom: 1px solid white;
+          padding-bottom: 3px; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enOneCol-6One {
+      display: flex;
+      flex-direction: column; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enTwoCol-6One {
+      margin-left: -5px;
+      color: white; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enTwoCol-6One .label {
+        margin-left: -20px;
+        font-size: 10px; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enTwoCol-6One input {
+        width: 294px;
+        height: 38px;
+        margin-left: -20px;
+        background-color: transparent;
+        border: 1px solid white; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enTwoCol-6One .inputFir {
+        margin-bottom: 20px; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12TwoCol-6Two {
+      color: white;
+      font-size: 10px; }
+    .container .row8 .row8Col-8 .row8Col-8Col-12Three {
+      margin-top: 19px;
+      margin-left: -5px; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Three .label {
+        color: white;
+        font-size: 10px; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Three textarea {
+        width: 733px;
+        height: 137px;
+        resize: none;
+        border: 1px solid white;
+        background-color: transparent;
+        margin-bottom: 20px; }
+      .container .row8 .row8Col-8 .row8Col-8Col-12Three button {
+        width: 232px;
+        height: 37px;
+        background-color: #49C4F7;
+        font-size: 10px;
+        color: white;
+        border: none; }
+
+.container .row9 {
+  background-color: #353D47;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .row9 .row9Col-8 footer .navBarUl {
+    margin-left: 6px; }
+    .container .row9 .row9Col-8 footer .navBarUl .navBarUlLi {
+      list-style: none;
+      display: inline-block;
+      border-right: 1px solid #515f67;
+      padding-right: 20px; }
+      .container .row9 .row9Col-8 footer .navBarUl .navBarUlLi .navBarUlLiA {
+        text-decoration: none;
+        color: #515f67;
+        color: white;
+        font-size: 8px; }
+    .container .row9 .row9Col-8 footer .navBarUl .navBarUlLiLast {
+      border: none; }
