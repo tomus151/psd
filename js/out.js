@@ -83,10 +83,7 @@ $(function () {
      var noVisibleButton = $('.noVisibleButton');
      noVisibleButton.on('click', function (e) {
           var link1 = $('.noVisibleInput').val();
-          console.log(link1);
           var imgs = $('.row3Col-8Img');
-
-          console.log(counter, link1);
           if (counter > 7) {
                counter = 0;
           }
@@ -99,6 +96,14 @@ $(function () {
           var visible = $('.visible');
           visible.css('display', 'none');
           visible.removeClass('visible');
+     });
+     var galImg = $('.row3Col-8Img');
+     galImg.on('click', function (e) {
+          var galleryDiv = $('.displayNone');
+          galleryDiv.removeClass('displayNone');
+          var href = $(this).attr('src');
+          var galleryWindow = $('.noVisibleGallery').find('img');
+          galleryWindow.attr('src', href);
      });
 });
 

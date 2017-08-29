@@ -11,10 +11,7 @@ $(()=>{
      let noVisibleButton = $('.noVisibleButton')
      noVisibleButton.on('click',function(e){
           let link1 = $('.noVisibleInput').val()
-          console.log(link1);
-          let imgs = $('.row3Col-8Img')
-
-          console.log(counter, link1);
+          let imgs = $('.row3Col-8Img');
           if(counter>7){
                counter=0
           }
@@ -28,5 +25,13 @@ $(()=>{
           visible.css('display', 'none')
           visible.removeClass('visible');
 
+     })
+     let galImg = $('.row3Col-8Img');
+     galImg.on('click', function(e){
+          let galleryDiv = $('.displayNone');
+          galleryDiv.removeClass('displayNone');
+          let href=$(this).attr('src');
+          let galleryWindow = $('.noVisibleGallery').find('img');
+          galleryWindow.attr('src',href);
      })
 })
