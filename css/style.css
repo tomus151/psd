@@ -190,6 +190,7 @@
         .container .row3 .row3Col-8 .col-3 a:hover {
           position: absolute; }
       .container .row3 .row3Col-8 .col-3 .row3Col-8Img {
+        cursor: pointer;
         width: 100%; }
       .container .row3 .row3Col-8 .col-3 .row3Col-8ImgAdd {
         width: 100%; }
@@ -451,6 +452,7 @@
   position: fixed; }
 
 .prevGalBut {
+  cursor: pointer;
   color: white;
   font-size: 50px;
   top: 14vh;
@@ -462,6 +464,7 @@
   text-align: center; }
 
 .nextGalBut {
+  cursor: pointer;
   color: white;
   font-size: 50px;
   top: 14vh;

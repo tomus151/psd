@@ -82,6 +82,7 @@ $(function () {
      var counter = 0;
      var noVisibleButton = $('.noVisibleButton');
      noVisibleButton.on('click', function (e) {
+          e.preventDefault();
           var link1 = $('.noVisibleInput').val();
           var imgs = $('.row3Col-8Img');
           if (counter > 7) {
@@ -99,11 +100,18 @@ $(function () {
      });
      var galImg = $('.row3Col-8Img');
      galImg.on('click', function (e) {
+          e.preventDefault();
           var galleryDiv = $('.displayNone');
           galleryDiv.removeClass('displayNone');
           var href = $(this).attr('src');
           var galleryWindow = $('.noVisibleGallery').find('img');
           galleryWindow.attr('src', href);
+     });
+     var galDiv = $('.noVisibleDivGallery');
+     galDiv.on('click', function (e) {
+          e.preventDefault();
+          var toHide = $('.toHide');
+          toHide.addClass('displayNone');
      });
 });
 

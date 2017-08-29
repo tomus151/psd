@@ -213,6 +213,7 @@
                     }
                }
                .row3Col-8Img{
+                    cursor: pointer;
                     width: 100%;
                     // transition: width 0.75s;
                     // &:hover{
@@ -549,6 +550,7 @@
      position: fixed;
 }
 .prevGalBut{
+     cursor: pointer;
      color: white;
      font-size: 50px;
      top:14vh;
@@ -560,6 +562,7 @@
      text-align: center;
 }
 .nextGalBut{
+     cursor: pointer;
      color: white;
      font-size: 50px;
      top:14vh;

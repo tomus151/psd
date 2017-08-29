@@ -10,6 +10,7 @@ $(()=>{
      let counter = 0;
      let noVisibleButton = $('.noVisibleButton')
      noVisibleButton.on('click',function(e){
+          e.preventDefault();
           let link1 = $('.noVisibleInput').val()
           let imgs = $('.row3Col-8Img');
           if(counter>7){
@@ -28,10 +29,17 @@ $(()=>{
      })
      let galImg = $('.row3Col-8Img');
      galImg.on('click', function(e){
+          e.preventDefault();
           let galleryDiv = $('.displayNone');
           galleryDiv.removeClass('displayNone');
           let href=$(this).attr('src');
           let galleryWindow = $('.noVisibleGallery').find('img');
           galleryWindow.attr('src',href);
+     })
+     let galDiv = $('.noVisibleDivGallery');
+     galDiv.on('click', function(e){
+          e.preventDefault();
+          let toHide =$('.toHide');
+          toHide.addClass('displayNone');
      })
 })
