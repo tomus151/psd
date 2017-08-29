@@ -73,6 +73,10 @@
 __webpack_require__(1);
 $(function () {
      var addImg = $('.row3Col-8ImgAdd');
+     var imgs = $('.row3Col-8Img');
+     for (var i = 0; i < imgs.length; i++) {
+          imgs.eq(i).attr('data-id', i);
+     }
      addImg.on('click', function (e) {
           e.preventDefault();
           var noVisible = $('.noVisible');
@@ -84,7 +88,7 @@ $(function () {
      noVisibleButton.on('click', function (e) {
           e.preventDefault();
           var link1 = $('.noVisibleInput').val();
-          var imgs = $('.row3Col-8Img');
+
           if (counter > 7) {
                counter = 0;
           }
@@ -106,6 +110,16 @@ $(function () {
           var href = $(this).attr('src');
           var galleryWindow = $('.noVisibleGallery').find('img');
           galleryWindow.attr('src', href);
+          var idImg = $(this).attr('data-id');
+          var nextBtn = $('.nextGalBut');
+
+          nextBtn.on('click', function (e) {
+               e.preventDefault();
+               idImg = parseInt(idImg) + 1;
+               var nextImg = $(".row3Col-8Img[data-id='idImg']");
+               console.log(nextImg);
+               console.log(idImg);
+          });
      });
      var galDiv = $('.noVisibleDivGallery');
      galDiv.on('click', function (e) {
