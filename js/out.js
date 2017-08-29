@@ -75,22 +75,30 @@ $(function () {
      var addImg = $('.row3Col-8ImgAdd');
      addImg.on('click', function (e) {
           e.preventDefault();
-          var visible = $('.noVisible');
-          visible.css('display', 'block');
+          var noVisible = $('.noVisible');
+          noVisible.addClass('visible');
+          noVisible.css('display', 'block');
      });
-     var counter = -1;
-     var plus = $('.noVisibleButton');
-     plus.on('click', function (e) {
+     var counter = 0;
+     var noVisibleButton = $('.noVisibleButton');
+     noVisibleButton.on('click', function (e) {
           var link1 = $('.noVisibleInput').val();
           console.log(link1);
           var imgs = $('.row3Col-8Img');
-          counter = counter + 1;
-          console.log(counter, link1);
 
+          console.log(counter, link1);
           if (counter > 7) {
                counter = 0;
           }
           imgs.eq(counter).attr('src', link1);
+          counter = counter + 1;
+     });
+     var noVisibleDiv = $('.noVisibleDiv');
+     noVisibleDiv.on('click', function (e) {
+          e.preventDefault();
+          var visible = $('.visible');
+          visible.css('display', 'none');
+          visible.removeClass('visible');
      });
 });
 
