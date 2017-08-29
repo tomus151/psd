@@ -172,6 +172,7 @@
 //row3
 .container .row3{
      background-color: white;
+     position: relative;
      .navBar2{
           background-color: white;
           .navBarUlLiA{
@@ -219,6 +220,9 @@
                     //      width: 18%;
                     // }
                }
+               .row3Col-8ImgAdd{
+                    width: 100%;
+               }
           }
      }
      .row3Col-8Two{
@@ -243,6 +247,7 @@
      background-color: #4E5A64;
      padding-top: 40px;
      color: white;
+     height: 330px;
      .row4Col-8Col-6One{
           .navBar2Span{
                @include headerSpan (white);
@@ -388,14 +393,16 @@
 }
 //row8
 .container .row8{
-     display: flex;
-     justify-content: center;
+
      background: url("../images/bgPhoto3.png");
      background-attachment: fixed;
      background-position: center;
      background-size: cover;
      height: 510px;
+     display: flex;
+     justify-content: center;
           .row8Col-8{
+               margin-left: 17%;
                padding-top: 48px;
                .row8Col-8Col-12One{
                     margin-bottom: 21px;
@@ -469,7 +476,6 @@
      align-items: center;
      .row9Col-8{
           footer{
-
                .navBarUl{
                     margin-left: 6px;
                     .navBarUlLi{
@@ -491,4 +497,43 @@
                }
           }
      }
+}
+.visible{
+     display: block;
+}
+.noVisible{
+     display: none;
+     position: absolute;
+     background: white;
+
+
+}
+.noVisibleInput{
+     left: 409px;
+     top: 261px;
+     width: 300px;
+     height: 50px;
+     border-radius:7px;
+     border: 5px solid #434952;
+}
+.noVisibleButton{
+     color: white;
+     border: 5px solid #434952;
+     left: 711px;
+     top: 261px;
+     font-size: 30px;
+     border-radius:7px;
+     background: grey;
+     width: 50px;
+     height: 50px;
+
+}
+.noVisibleDiv{
+     position: absolute;
+     left: 0;
+     top: 124px;
+     background-color: black;
+     opacity: 0.5;
+     width: 1200px;
+     height: 322px;
 }
