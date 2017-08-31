@@ -182,17 +182,15 @@
       display: flex;
       align-items: center;
       justify-content: center; }
-      .container .row3 .row3Col-8 .col-3 a {
+      .container .row3 .row3Col-8 .col-3 p {
         color: white;
         font-size: 40px;
-        position: absolute;
-        text-decoration: none; }
-        .container .row3 .row3Col-8 .col-3 a:hover {
-          position: absolute; }
+        position: absolute; }
       .container .row3 .row3Col-8 .col-3 .row3Col-8Img {
         cursor: pointer;
         width: 100%; }
       .container .row3 .row3Col-8 .col-3 .row3Col-8ImgAdd {
+        cursor: pointer;
         width: 100%; }
   .container .row3 .row3Col-8Two {
     padding-bottom: 20px; }
@@ -486,3 +484,6 @@
 
 .displayNone {
   display: none; }
+
+.row10 {
+  height: 100px; }

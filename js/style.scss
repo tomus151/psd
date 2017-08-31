@@ -203,14 +203,10 @@
                display: flex;
                align-items: center;
                justify-content: center;
-               a{
+               p{
                     color: white;
                     font-size: 40px;
                     position: absolute;
-                    text-decoration: none;
-                    &:hover{
-                         position:absolute;
-                    }
                }
                .row3Col-8Img{
                     cursor: pointer;
@@ -222,6 +218,7 @@
                     // }
                }
                .row3Col-8ImgAdd{
+                    cursor: pointer;
                     width: 100%;
                }
           }
@@ -586,4 +583,7 @@
 }
 .displayNone{
      display: none;
+}
+.row10{
+     height: 100px;
 }

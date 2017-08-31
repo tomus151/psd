@@ -77,5 +77,55 @@ $(()=>{
           let toHide =$('.toHide');
           toHide.addClass('displayNone');
      })
+     //formularz
+     let url = "./db/coments.json"
+     let ul = $('.comments')
+     function loadComments(){
+          $.ajax({
+               url: url,
+               type: "GET",
+               dataType: "json"
+          }).done(function(resp){
+               console.log(resp.comments[1].full_name);
+               ul.empty()
+               for (var i=0; i<resp.comments.length; i++){
+                    var p = $("<p>");
+                    var h3 = $("<h3>");
+                    var li = $("<li>");
+                    var title = resp.comments[i].full_name;
+                    var desc = resp.comments[i].message;
+                    li.attr("data-id-comment", resp.comments[i].id);
+                    h3.text(title);
+                    p.text(desc);
+                    li.append(h3);
+                    li.append(p);
+                    ul.append(li);
+               }
+          })
+     }
+     loadComments();
 
+
+     let fullName = $('.inputFullName');
+     let email = $('.inputEmail');
+     let message = $('.textareaMessage');
+     let messageButton = $('.buttonSend');
+     messageButton.on('click', function(e){
+          e.preventDefault();
+          let newComment = {
+               full_name: fullName.val(),
+               email: email.val(),
+               message:  message.val()
+          }
+          console.log(newComment);
+          addComment(newComment, loadComments)
+          function addComment(obj, fn){
+               $.ajax({
+                    url: url,
+                    type: "POST",
+                    dataType: "json",
+                    data: obj
+               }).done(fn);
+          }
+     })
 })
