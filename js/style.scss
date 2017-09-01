@@ -467,12 +467,30 @@
 }
 //row9
 .container .row9{
+     display: flex;
+     justify-content: center;
+     background-color: rgba(78, 90, 100, 0.3);
+     .row9Col-8{
+          border-left: 1px solid black;
+          margin-left: 20px;
+          .navBar2Span{
+               @include headerSpan (white);
+          }
+          .comments{
+               li{
+                    list-style: none;
+               }
+          }
+     }
+}
+//row 10
+.container .row10{
      background-color: #353D47;
      height: 107px;
      display: flex;
      justify-content: center;
      align-items: center;
-     .row9Col-8{
+     .row10Col-8{
           footer{
                .navBarUl{
                     margin-left: 6px;
@@ -583,7 +601,4 @@
 }
 .displayNone{
      display: none;
-}
-.row10{
-     height: 100px;
 }
