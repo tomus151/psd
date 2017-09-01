@@ -159,6 +159,18 @@ $(function () {
           }).done(function (resp) {
                console.log(resp.comments[1].full_name);
                ul.empty();
+               //od tego miejsca jest robiona losowość komentarzy jeszcze trzeba dopisać by nie powtarzały się bo jak narazie mamy pętlę i tablice w której są powtarzalne liczby;
+
+               var array = [];
+               for (var i = 0; i < resp.comments.length / 3; i++) {
+                    var nrForArray = 0;
+                    console.log(resp.comments.length);
+                    nrForArray = Math.floor(Math.random() * resp.comments.length + 1);
+                    console.log(nrForArray);
+                    array.push(nrForArray);
+               }
+               //od tąd jest ta pętla i wyżej ma być napisana losowość komentarzy chyba wyżej ide na obiad i później się zobaczy
+               console.log(array);
                for (var i = 0; i < resp.comments.length; i++) {
                     var p = $("<p>");
                     var h3 = $("<h3>");
@@ -175,7 +187,6 @@ $(function () {
           });
      }
      loadComments();
-
      var fullName = $('.inputFullName');
      var email = $('.inputEmail');
      var message = $('.textareaMessage');
@@ -187,16 +198,14 @@ $(function () {
                email: email.val(),
                message: message.val()
           };
-          console.log(newComment);
-          addComment(newComment, loadComments);
-          function addComment(obj, fn) {
-               $.ajax({
-                    url: url,
-                    type: "POST",
-                    dataType: "json",
-                    data: obj
-               }).done(fn);
-          }
+          var p = $("<p>");
+          var h3 = $("<h3>");
+          var li = $("<li>");
+          h3.text(newComment.full_name);
+          p.text(newComment.message);
+          li.append(h3);
+          li.append(p);
+          ul.append(li);
      });
 });
 

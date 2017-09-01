@@ -469,16 +469,28 @@
 .container .row9{
      display: flex;
      justify-content: center;
-     background-color: rgba(78, 90, 100, 0.3);
+     background-color: white;
      .row9Col-8{
-          border-left: 1px solid black;
-          margin-left: 20px;
+          margin: 60px 0px 60px 40px;
           .navBar2Span{
-               @include headerSpan (white);
+               font-size: 20px;
+               @include headerSpan (black);
           }
           .comments{
+               margin-top: 20px;
                li{
                     list-style: none;
+                    border: 3px solid #4E5A64;
+                    margin-bottom: 10px;
+                    border-radius: 2px;
+                    h3{
+                         padding-top: 5px;
+                         margin-left: 20px;
+                    }
+                    p{
+                         margin: 7px 0px;
+                         margin-left: 55px;
+                    }
                }
           }
      }
@@ -491,6 +503,7 @@
      justify-content: center;
      align-items: center;
      .row10Col-8{
+          margin-left: 40px;
           footer{
                .navBarUl{
                     margin-left: 6px;

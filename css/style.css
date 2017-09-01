@@ -384,18 +384,29 @@
 .container .row9 {
   display: flex;
   justify-content: center;
-  background-color: rgba(78, 90, 100, 0.3); }
+  background-color: white; }
   .container .row9 .row9Col-8 {
-    border-left: 1px solid black;
-    margin-left: 20px; }
+    margin: 60px 0px 60px 40px; }
     .container .row9 .row9Col-8 .navBar2Span {
+      font-size: 20px;
       padding-top: 40px;
-      color: white; }
+      color: black; }
       .container .row9 .row9Col-8 .navBar2Span .navBar2SpanUnderline {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
         padding-bottom: 3px; }
-    .container .row9 .row9Col-8 .comments li {
-      list-style: none; }
+    .container .row9 .row9Col-8 .comments {
+      margin-top: 20px; }
+      .container .row9 .row9Col-8 .comments li {
+        list-style: none;
+        border: 3px solid #4E5A64;
+        margin-bottom: 10px;
+        border-radius: 2px; }
+        .container .row9 .row9Col-8 .comments li h3 {
+          padding-top: 5px;
+          margin-left: 20px; }
+        .container .row9 .row9Col-8 .comments li p {
+          margin: 7px 0px;
+          margin-left: 55px; }
 
 .container .row10 {
   background-color: #353D47;
@@ -403,20 +414,22 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  .container .row10 .row10Col-8 footer .navBarUl {
-    margin-left: 6px; }
-    .container .row10 .row10Col-8 footer .navBarUl .navBarUlLi {
-      list-style: none;
-      display: inline-block;
-      border-right: 1px solid #515f67;
-      padding-right: 20px; }
-      .container .row10 .row10Col-8 footer .navBarUl .navBarUlLi .navBarUlLiA {
-        text-decoration: none;
-        color: #515f67;
-        color: white;
-        font-size: 8px; }
-    .container .row10 .row10Col-8 footer .navBarUl .navBarUlLiLast {
-      border: none; }
+  .container .row10 .row10Col-8 {
+    margin-left: 40px; }
+    .container .row10 .row10Col-8 footer .navBarUl {
+      margin-left: 6px; }
+      .container .row10 .row10Col-8 footer .navBarUl .navBarUlLi {
+        list-style: none;
+        display: inline-block;
+        border-right: 1px solid #515f67;
+        padding-right: 20px; }
+        .container .row10 .row10Col-8 footer .navBarUl .navBarUlLi .navBarUlLiA {
+          text-decoration: none;
+          color: #515f67;
+          color: white;
+          font-size: 8px; }
+      .container .row10 .row10Col-8 footer .navBarUl .navBarUlLiLast {
+        border: none; }
 
 .visible {
   display: block; }
