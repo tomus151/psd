@@ -93,19 +93,16 @@ $(()=>{
                let array =[];
                for (var i = 0; i<(resp.comments.length/3); i++){
                     let nrForArray = 0;
-                    console.log(resp.comments.length);
                     nrForArray = Math.floor((Math.random() * resp.comments.length) + 1);
-                    console.log(nrForArray);
                     array.push(nrForArray);
                }
                //od tąd jest ta pętla i wyżej ma być napisana losowość komentarzy chyba wyżej ide na obiad i później się zobaczy
-               console.log(array);
-               for (var i=0; i<resp.comments.length; i++){
+               for (var i=0; i<array.length; i++){
                     var p = $("<p>");
                     var h3 = $("<h3>");
                     var li = $("<li>");
-                    var title = resp.comments[i].full_name;
-                    var desc = resp.comments[i].message;
+                    var title = resp.comments[array[i]-1].full_name;
+                    var desc = resp.comments[array[i]-1].message;
                     li.attr("data-id-comment", resp.comments[i].id);
                     h3.text(title);
                     p.text(desc);
