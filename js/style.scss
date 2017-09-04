@@ -267,6 +267,11 @@
           border: 1px solid #363F48;
           padding: 5px;
      }
+     .row4Col-8Col6Two{
+          iframe{
+               z-index: 1;
+          }
+     }
 }
 //row5
 .container .row5{
@@ -576,6 +581,7 @@
 }
 .fixed{
      position: fixed;
+     z-index: 2;
 }
 .prevGalBut{
      cursor: pointer;
