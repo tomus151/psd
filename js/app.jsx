@@ -139,5 +139,26 @@ $(()=>{
           e.preventDefault();
           fullName = '';
      })
+     let hamMenu = $('.hamburgerMenu').find('img');
+     hamMenu.on('click',function(e){
+          e.preventDefault();
+          let menu = $('.row1').find('.navBarUl');
+          let menuHeight = $('.row1').find('.navBar');
+          let headerTextP1 = $('.headerTextP1');
+          if (!$(this).hasClass('active')){
+               $(this).addClass('active');
+               menu.css('display', 'none');
+               menuHeight.css('paddingBottom', '60px');
+               headerTextP1.css('margin-top', '163px');
+
+          }else{
+               menu.css('display','block');
+               $(this).removeClass('active');
+               menuHeight.css('paddingBottom', '20px');
+               headerTextP1.css('margin-top', '25px');
+          }
+
+
+     })
 
 })

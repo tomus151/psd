@@ -62,23 +62,55 @@
   padding-top: 31px;
   padding-bottom: 30px;
   font-size: 0px; }
+  @media screen and (max-width: 480px) {
+    .navBar {
+      display: block;
+      padding-bottom: 60px; } }
   .navBar a {
     color: white;
     text-decoration: none; }
   .navBar .navBarLogo {
     font-size: 18px;
-    margin-left: 76px;
+    margin-left: -130px;
     margin-top: 6px; }
+    @media screen and (max-width: 480px) {
+      .navBar .navBarLogo {
+        margin-left: 20px;
+        float: left; } }
   .navBar .navBarLogoSpanE {
     color: #49C4F7; }
+  .navBar .hamburgerMenu {
+    display: none;
+    width: 30px;
+    height: 30px; }
+    @media screen and (max-width: 480px) {
+      .navBar .hamburgerMenu {
+        display: block;
+        float: right;
+        margin-right: 20px; } }
+    .navBar .hamburgerMenu img {
+      -webkit-filter: invert(100%);
+      width: 100%;
+      height: 100%; }
   .navBar .navBarUl {
     margin-right: 56px;
     display: flex; }
+    @media screen and (max-width: 480px) {
+      .navBar .navBarUl {
+        display: none;
+        padding-left: 55px;
+        padding-bottom: 0px;
+        margin-top: 50px;
+        text-align: center; } }
     .navBar .navBarUl .navBarUlLi {
       list-style: none;
       padding: 10px 4px;
       font-size: 10px;
       margin: 0; }
+      @media screen and (max-width: 480px) {
+        .navBar .navBarUl .navBarUlLi {
+          width: 100%;
+          font-size: 18px; } }
       .navBar .navBarUl .navBarUlLi .navBarUlLiA {
         font-weight: 400;
         text-decoration: none;
@@ -355,6 +387,7 @@
         width: 294px;
         height: 38px;
         margin-left: -20px;
+        color: white;
         background-color: transparent;
         border: 1px solid white; }
       .container .row8 .row8Col-8 .row8Col-8Col-12Two .row8Col-8Col-12enTwoCol-6One .inputFir {
@@ -374,7 +407,8 @@
         resize: none;
         border: 1px solid white;
         background-color: transparent;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        color: white; }
       .container .row8 .row8Col-8 .row8Col-8Col-12Three button {
         width: 232px;
         height: 37px;
